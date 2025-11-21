@@ -1,17 +1,17 @@
-name = "lumina-blog-backend"
+name = "askforpath-blog-backend"
 main = "index.ts"
 compatibility_date = "2024-03-20"
 
 # D1 数据库绑定
 [[d1_databases]]
 binding = "DB"
-database_name = "lumina-blog-db"
-database_id = "请在此处填入你的D1数据库ID"
+database_name = "askforPath-blog-db"
+database_id = "1bebc9dc-062f-492a-9d1d-74521d08ddfd"
 
 # R2 存储桶绑定
 [[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "lumina-blog-media"
+bucket_name = "askforpath-blog-media"
+binding = "askforpath_blog_media"
 
 [vars]
 # 允许跨域的前端地址 (可选)
@@ -19,7 +19,7 @@ bucket_name = "lumina-blog-media"
 
 # R2 公开访问域名 (必须配置，否则上传后无法预览)
 # 格式: https://pub-xxxxxxxx.r2.dev 或 https://media.yourdomain.com
-R2_PUBLIC_DOMAIN = "https://pub-REPLACE-WITH-YOUR-R2-DOMAIN.r2.dev"
+R2_PUBLIC_DOMAIN = "https://buckets.ancientpath.dpdns.org"
 
 # 后台管理密码 (必须与前端 services/api.ts 中的 AUTH_TOKEN 一致)
 AUTH_SECRET = "a8f5b3e7d2c9f1g4h6j8k9m2n4p6q8r0t1y3u5i7o9"
